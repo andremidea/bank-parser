@@ -14,5 +14,5 @@ cargo run --bin main -- --config src/n26.toml /path-to.csv
 ## Supported banks
 Currently there's only one parser created for [N26](https://n26.com)
 
-- [ ]: Monzo
-- [ ]: Revolut
+- [ ] Monzo
+- [ ] Revolut
