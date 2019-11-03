@@ -1,0 +1,75 @@
+[input]
+delimiter = ","
+with_header = false
+
+[[input.fields]]
+name = "Date"
+column_type = "Date"
+pipelines = []
+
+[[input.fields]]
+name = "Payee"
+column_type = "Merchant"
+pipelines = []
+
+[[input.fields]]
+name = "Account number"
+column_type = "Value"
+pipelines = []
+
+[[input.fields]]
+name = "Transaction type"
+column_type = "Value"
+pipelines = []
+
+[[input.fields]]
+name = "Payment reference"
+column_type = "Description"
+pipelines = []
+
+[[input.fields]]
+name = "Category"
+column_type = "Category"
+pipelines = []
+
+
+[[input.fields]]
+name = "Amount (EUR)"
+column_type = "Value"
+pipelines = []
+
+
+[[input.fields]]
+name = "Amount (Foreign Currency)"
+column_type = "Value"
+pipelines = []
+
+[[input.fields]]
+name = "Type Foreign Currency"
+column_type = "Value"
+pipelines = []
+
+[[input.fields]]
+name = "Exchange Rate"
+column_type = "Value"
+pipelines = []
+
+[output]
+delimiter = ","
+with_header = true
+
+
+[[output.fields]]
+source = "Date"
+renamed = "date"
+pipelines = []
+
+[[output.fields]]
+source = "Payee"
+renamed = "merchant"
+pipelines = []
+
+[[output.fields]]
+source = "Amount (EUR)"
+renamed = "amount"
+pipelines = []
